@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.content {
+    width: 50%;
+    height: 110%;
+}
+
+.card .woman {
+    top: 0px;
+    left: -60px;
+}
+
+.card .sombra {
+    top: -350px;
+    left: calc(-50% - 10px);
+}
+
+.card .sombra-mobile {
+    display: none;
+}
+
+.card .sombra-full {
+    display: block;
+}
+
+.card .woman-mobile {
+    display: none;
+}
+
+.card .woman-full {
+    display: block;
+}

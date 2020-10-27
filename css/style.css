@@ -1,0 +1,115 @@
+:root {
+    /* #### Text */
+    --very-dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    /* #### Gradient */
+    /* Background gradient: */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    /* ### Neutral */
+    /* #### Text */
+    /* 702DA8 */
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    /* #787880 */
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    /* #### Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* 62.5% = 10px */
+    font-size: 75%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #732aa8, #652ba8, #552ba8, #432ca7, #2c2ca6);
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-grayish-blue);
+}
+
+.card {
+    position: relative;
+    padding: 10rem 0 2rem 0;
+    width: 90%;
+    height: 70%;
+    text-align: center;
+    background-color: white;
+    margin: 12rem 1rem 5rem 1rem;
+    border-radius: 15px;
+}
+
+.card .woman {
+    position: absolute;
+    left: calc(50% - 150px);
+    top: -110px;
+}
+
+.card h1 {
+    color: var(--very-dark-blue);
+}
+
+.card p {
+    margin: 1rem;
+}
+
+.card button {
+    margin: 1rem;
+    font-weight: 400;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.accordion {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    outline: none;
+    transition: 0.4s;
+}
+
+.panel {
+    display: none;
+}
+
+.active,
+.accordion:hover {
+    font-weight: 700;
+}
+
+.card .sombra {
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 120px);
+}
+
+.card .sombra-mobile {
+    display: block;
+}
+
+.card .sombra-full {
+    display: none;
+}
+
+.card .woman-mobile {
+    display: block;
+}
+
+.card .woman-full {
+    display: none;
+}
