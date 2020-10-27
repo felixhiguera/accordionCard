@@ -15,8 +15,11 @@
 }
 
 .card .sombra {
+    position: absolute;
     top: -350px;
-    left: calc(-50% - 10px);
+    left: calc(-50%);
+    border: dotted;
+    overflow: hidden;
 }
 
 .card .sombra-mobile {
@@ -33,4 +36,5 @@
 
 .card .woman-full {
     display: block;
+    overflow: hidden;
 }
